@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Sher-e-Punjab Hotel & Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: "#800000", secondary: "#FFD700" },
+                    borderRadius: {
+                        none: "0px", sm: "4px", DEFAULT: "8px", md: "12px", lg: "16px", xl: "20px", "2xl": "24px", "3xl": "32px", full: "9999px", button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-primary shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index" class="text-2xl font-['Pacifico'] text-secondary">Sher-e-Punjab</a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index" class="text-white hover:text-secondary transition-colors font-medium">Home</a>
+                <a href="about" class="text-white hover:text-secondary transition-colors font-medium">About</a>
+                <a href="rooms" class="text-white hover:text-secondary transition-colors font-medium">Rooms</a>
+                <a href="dining" class="text-white hover:text-secondary transition-colors font-medium">Dining</a>
+                <a href="events" class="text-white hover:text-secondary transition-colors font-medium">Events</a>
+                <a href="gallery" class="text-white hover:text-secondary transition-colors font-medium">Gallery</a>
+                <a href="contact" class="text-white hover:text-secondary transition-colors font-medium">Contact</a>
+            </nav>
+
+            <!-- Book Now Button -->
+            <a href="contact" class="hidden md:block bg-secondary text-primary px-6 py-2 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Book Now</a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-menu-line ri-2x"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 bg-primary z-50 shadow-lg pt-16 px-4">
+            <button id="close-menu-button" class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-close-line ri-2x"></i>
+            </button>
+            <div class="flex flex-col space-y-4">
+                <a href="index" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Home</a>
+                <a href="about" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">About</a>
+                <a href="rooms" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Rooms</a>
+                <a href="dining" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Dining</a>
+                <a href="events" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Events</a>
+                <a href="gallery" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Gallery</a>
+                <a href="contact" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Contact</a>
+                <a href="contact" class="bg-secondary text-primary px-6 py-2 rounded-button font-semibold hover:bg-opacity-90 transition-all text-center mt-4 whitespace-nowrap">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="pt-24 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl font-bold mb-8">Privacy Policy</h1>
+                <p class="text-gray-600 mb-8">Last updated: January 1, 2025</p>
+
+                <div class="prose max-w-none">
+                    <h2 class="text-2xl font-bold mb-4 text-primary">1. Information We Collect</h2>
+                    <p class="mb-4">We collect information you provide directly to us, such as when you:</p>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Make a reservation or book our services</li>
+                        <li>Create an account on our website</li>
+                        <li>Contact us for customer service</li>
+                        <li>Subscribe to our newsletter</li>
+                        <li>Participate in surveys or promotions</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mb-4 text-primary">2. How We Use Your Information</h2>
+                    <p class="mb-4">We use the information we collect to:</p>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Process and manage your reservations</li>
+                        <li>Provide customer service and support</li>
+                        <li>Send you confirmations and updates</li>
+                        <li>Improve our services and website</li>
+                        <li>Send marketing communications (with your consent)</li>
+                        <li>Comply with legal obligations</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mb-4 text-primary">3. Information Sharing</h2>
+                    <p class="mb-4">We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>With service providers who assist us in operating our business</li>
+                        <li>When required by law or to protect our rights</li>
+                        <li>In connection with a business transfer or merger</li>
+                        <li>With your explicit consent</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mb-4 text-primary">4. Data Security</h2>
+                    <p class="mb-6">We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
+
+                    <h2 class="text-2xl font-bold mb-4 text-primary">5. Cookies and Tracking</h2>
+                    <p class="mb-4">We use cookies and similar tracking technologies to:</p>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Remember your preferences</li>
+                        <li>Analyze website traffic and usage</li>
+                        <li>Improve user experience</li>
+                        <li>Provide personalized content</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mb-4 text-primary">6. Your Rights</h2>
+                    <p class="mb-4">You have the right to:</p>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Access your personal information</li>
+                        <li>Correct inaccurate information</li>
+                        <li>Request deletion of your information</li>
+                        <li>Opt-out of marketing communications</li>
+                        <li>Withdraw consent where applicable</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mb-4 text-primary">7. Data Retention</h2>
+                    <p class="mb-6">We retain your personal information for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law.</p>
+
+                    <h2 class="text-2xl font-bold mb-4 text-primary">8. Children's Privacy</h2>
+                    <p class="mb-6">Our services are not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+                    <h2 class="text-2xl font-bold mb-4 text-primary">9. Changes to This Policy</h2>
+                    <p class="mb-6">We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+
+                    <h2 class="text-2xl font-bold mb-4 text-primary">10. Contact Us</h2>
+                    <p class="mb-4">If you have any questions about this privacy policy, please contact us:</p>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <p><strong>Sher-e-Punjab Hotel & Restaurant</strong></p>
+                        <p>123 Ambedkar Road, Abu Road, Rajasthan 307026, India</p>
+                        <p>Phone: +91 2974 123456</p>
+                        <p>Email: privacy@sherepunjabhotel.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-['Pacifico'] text-secondary mb-6">Sher-e-Punjab</h3>
+                    <p class="text-gray-400 mb-6">Experience luxury and traditional Rajasthani hospitality in the heart of Abu Road, Rajasthan.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="rooms" class="text-gray-400 hover:text-white transition-colors">Rooms & Suites</a></li>
+                        <li><a href="contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="ri-map-pin-line mr-3 mt-1"></i>
+                            <span class="text-gray-400">123 Ambedkar Road, Abu Road, Rajasthan 307026, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-phone-line mr-3"></i>
+                            <span class="text-gray-400">+91 2974 123456</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="terms" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="cookie-policy" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-500 text-center">&copy; 2025 Sher-e-Punjab Hotel & Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

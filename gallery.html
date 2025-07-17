@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Photo Gallery | Sher-e-Punjab Hotel Abu Road | Hotel Images & Virtual Tour</title>
+    <meta name="description" content="Explore Sher-e-Punjab Hotel through our photo gallery. View luxury rooms, restaurant, facilities, event venues, and hotel amenities in Abu Road, Rajasthan.">
+    <meta name="keywords" content="hotel photos Abu Road, Sher-e-Punjab gallery, hotel images, virtual tour, luxury hotel pictures, room photos, restaurant images">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.sherepunjabhotel.com/gallery">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Photo Gallery | Sher-e-Punjab Hotel Abu Road">
+    <meta property="og:description" content="Explore Sher-e-Punjab Hotel through our photo gallery. View luxury rooms, restaurant, facilities, and event venues.">
+    <meta property="og:image" content="https://www.sherepunjabhotel.com/images/hotel-gallery.jpg">
+    <meta property="og:url" content="https://www.sherepunjabhotel.com/gallery">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts and Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: "#800000", secondary: "#FFD700" },
+                    borderRadius: {
+                        none: "0px", sm: "4px", DEFAULT: "8px", md: "12px", lg: "16px", xl: "20px", "2xl": "24px", "3xl": "32px", full: "9999px", button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-primary shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index" class="text-2xl font-['Pacifico'] text-secondary">Sher-e-Punjab</a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index" class="text-white hover:text-secondary transition-colors font-medium">Home</a>
+                <a href="about" class="text-white hover:text-secondary transition-colors font-medium">About</a>
+                <a href="rooms" class="text-white hover:text-secondary transition-colors font-medium">Rooms</a>
+                <a href="dining" class="text-white hover:text-secondary transition-colors font-medium">Dining</a>
+                <a href="events" class="text-white hover:text-secondary transition-colors font-medium">Events</a>
+                <a href="gallery" class="text-secondary font-medium">Gallery</a>
+                <a href="contact" class="text-white hover:text-secondary transition-colors font-medium">Contact</a>
+            </nav>
+
+            <!-- Book Now Button -->
+            <a href="reservations" class="hidden md:block bg-secondary text-primary px-6 py-2 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Book Now</a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-menu-line ri-2x"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 bg-primary z-50 shadow-lg pt-16 px-4">
+            <button id="close-menu-button" class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-close-line ri-2x"></i>
+            </button>
+            <div class="flex flex-col space-y-4">
+                <a href="index" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Home</a>
+                <a href="about" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">About</a>
+                <a href="rooms" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Rooms</a>
+                <a href="dining" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Dining</a>
+                <a href="events" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Events</a>
+                <a href="gallery" class="text-secondary font-medium py-2 border-b border-gray-700">Gallery</a>
+                <a href="contact" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Contact</a>
+                <a href="reservations" class="bg-secondary text-primary px-6 py-2 rounded-button font-semibold hover:bg-opacity-90 transition-all text-center mt-4 whitespace-nowrap">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero flex items-center justify-center pt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Photo Gallery</h1>
+            <p class="text-xl text-white max-w-2xl mx-auto">Explore our beautiful hotel, luxurious rooms, and memorable moments</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Hotel Exterior & Lobby -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">Hotel Exterior & Lobby</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Elegant%20hotel%20exterior%20with%20traditional%20Rajasthani%20architecture%2C%20featuring%20ornate%20arches%2C%20domes%2C%20and%20intricate%20stone%20carvings.%20The%20building%20has%20a%20warm%2C%20inviting%20facade%20with%20maroon%20and%20gold%20accents.%20Beautiful%20landscaped%20gardens%20surround%20the%20entrance%20with%20native%20plants%20and%20flowers.&width=400&height=300&seq=exterior1&orientation=landscape" alt="Hotel Exterior" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Hotel Exterior</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Elegant%20hotel%20lobby%20with%20marble%20floors%2C%20crystal%20chandeliers%2C%20and%20plush%20seating%20areas.%20The%20space%20features%20rich%20maroon%20and%20gold%20color%20accents%20with%20traditional%20Rajasthani%20design%20elements.%20The%20reception%20desk%20is%20visible%20with%20staff%20in%20professional%20attire.%20The%20lighting%20is%20warm%20and%20inviting.&width=400&height=300&seq=lobby1&orientation=landscape" alt="Hotel Lobby" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Grand Lobby</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Hotel%20entrance%20with%20traditional%20Indian%20welcome%20setup%2C%20featuring%20decorative%20rangoli%20patterns%20on%20the%20floor%2C%20brass%20lamps%2C%20and%20fresh%20flower%20arrangements.%20Staff%20in%20traditional%20uniforms%20are%20greeting%20guests%20with%20folded%20hands.%20The%20entrance%20has%20ornate%20pillars%20and%20warm%20lighting.&width=400&height=300&seq=entrance1&orientation=landscape" alt="Hotel Entrance" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Welcome Area</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rooms & Suites -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">Rooms & Suites</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Luxurious%20hotel%20deluxe%20room%20with%20a%20king-sized%20bed%20featuring%20premium%20white%20linens%20and%20decorative%20pillows%20in%20maroon%20and%20gold.%20The%20room%20has%20elegant%20wooden%20furniture%2C%20including%20a%20writing%20desk%2C%20bedside%20tables%20with%20lamps%2C%20and%20a%20comfortable%20seating%20area.%20Large%20windows%20offer%20natural%20light%2C%20and%20the%20decor%20features%20subtle%20Rajasthani%20influences.&width=400&height=300&seq=deluxeroom1&orientation=landscape" alt="Deluxe Room" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Deluxe Room</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Elegant%20hotel%20premium%20suite%20with%20a%20separate%20living%20area%20and%20bedroom.%20The%20living%20space%20features%20a%20plush%20sofa%2C%20coffee%20table%2C%20and%20entertainment%20unit.%20The%20bedroom%20has%20a%20king-sized%20bed%20with%20premium%20bedding%20in%20rich%20maroon%20and%20gold%20tones.%20The%20room%20includes%20a%20mini%20bar%2C%20work%20desk%2C%20and%20large%20windows%20with%20views.&width=400&height=300&seq=premiumsuite1&orientation=landscape" alt="Premium Suite" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Premium Suite</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Opulent%20hotel%20royal%20suite%20with%20a%20spacious%20layout%20featuring%20a%20grand%20bedroom%2C%20separate%20living%20room%2C%20and%20dining%20area.%20The%20bedroom%20has%20a%20luxurious%20king-sized%20four-poster%20bed%20with%20premium%20silk%20bedding%20in%20rich%20maroon%20and%20gold.%20The%20suite%20includes%20a%20private%20balcony%20with%20views%2C%20a%20marble%20bathroom%20with%20jacuzzi.&width=400&height=300&seq=royalsuite1&orientation=landscape" alt="Royal Suite" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Royal Suite</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Luxurious%20hotel%20bathroom%20with%20marble%20finishes%2C%20a%20large%20soaking%20tub%2C%20separate%20glass%20shower%2C%20and%20double%20vanity%20with%20premium%20fixtures.%20The%20space%20features%20warm%20lighting%2C%20plush%20towels%2C%20and%20high-end%20toiletries.%20The%20design%20includes%20subtle%20gold%20accents%20and%20elegant%20mirror%20work.&width=400&height=300&seq=bathroom1&orientation=landscape" alt="Luxury Bathroom" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Luxury Bathroom</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant & Dining -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">Restaurant & Dining</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Elegant%20hotel%20restaurant%20with%20rich%20maroon%20and%20gold%20decor.%20Tables%20are%20set%20with%20fine%20white%20linens%2C%20gold-rimmed%20plates%2C%20and%20crystal%20glassware.%20The%20space%20features%20traditional%20Rajasthani%20design%20elements%20including%20ornate%20arches%20and%20decorative%20panels.%20Soft%20lighting%20from%20chandeliers%20creates%20a%20warm%2C%20inviting%20atmosphere.&width=400&height=300&seq=restaurant2&orientation=landscape" alt="Restaurant Interior" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">The Royal Spice Restaurant</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Beautifully%20plated%20traditional%20Indian%20thali%20with%20multiple%20small%20bowls%20containing%20various%20curries%2C%20dal%2C%20rice%2C%20bread%2C%20and%20accompaniments.%20The%20presentation%20is%20elegant%20with%20brass%20or%20silver%20serving%20dishes%20on%20a%20banana%20leaf%20or%20decorative%20plate.%20The%20food%20looks%20fresh%2C%20colorful%2C%20and%20appetizing.&width=400&height=300&seq=food1&orientation=landscape" alt="Traditional Thali" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Traditional Thali</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Professional%20Indian%20chef%20in%20traditional%20white%20chef%27s%20uniform%20and%20hat%2C%20skillfully%20preparing%20food%20in%20a%20modern%20hotel%20kitchen.%20The%20kitchen%20is%20well-equipped%20with%20stainless%20steel%20appliances%20and%20surfaces.%20The%20chef%20is%20focused%20on%20cooking%2C%20with%20various%20spices%20and%20ingredients%20visible%20in%20the%20background.&width=400&height=300&seq=chef1&orientation=landscape" alt="Chef at Work" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Our Master Chef</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facilities & Amenities -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">Facilities & Amenities</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Luxurious%20hotel%20swimming%20pool%20surrounded%20by%20comfortable%20loungers%20and%20umbrellas.%20The%20pool%20area%20features%20elegant%20stone%20work%20and%20landscaping%20with%20tropical%20plants.%20The%20water%20is%20crystal%20clear%20with%20subtle%20lighting.%20The%20area%20has%20a%20serene%20atmosphere%20with%20maroon%20and%20gold%20accents%20in%20the%20decor%20and%20furnishings.&width=400&height=300&seq=pool1&orientation=landscape" alt="Swimming Pool" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Swimming Pool</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Opulent%20hotel%20spa%20treatment%20room%20with%20warm%20lighting%20and%20luxurious%20decor.%20The%20room%20features%20a%20massage%20table%20with%20premium%20linens%2C%20aromatic%20candles%2C%20and%20natural%20stone%20elements.%20The%20color%20scheme%20includes%20subtle%20maroon%20and%20gold%20accents.%20The%20atmosphere%20is%20peaceful%20and%20serene%20with%20traditional%20Rajasthani%20design%20touches.&width=400&height=300&seq=spa1&orientation=landscape" alt="Spa Treatment Room" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Spa & Wellness</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Modern%20hotel%20fitness%20center%20with%20state-of-the-art%20exercise%20equipment%20including%20treadmills%2C%20elliptical%20machines%2C%20and%20weight%20training%20equipment.%20The%20gym%20has%20large%20windows%20providing%20natural%20light%2C%20mirrors%20on%20the%20walls%2C%20and%20a%20clean%2C%20contemporary%20design.%20The%20flooring%20is%20professional%20gym%20flooring.&width=400&height=300&seq=gym1&orientation=landscape" alt="Fitness Center" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Fitness Center</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events & Celebrations -->
+            <div>
+                <h2 class="text-3xl font-bold mb-8 text-center">Events & Celebrations</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Elegant%20hotel%20banquet%20hall%20set%20up%20for%20a%20formal%20event.%20The%20space%20features%20crystal%20chandeliers%2C%20round%20tables%20with%20white%20linens%20and%20gold%20chairs.%20Floral%20centerpieces%20adorn%20each%20table.%20The%20room%20has%20rich%20maroon%20drapery%20and%20gold%20accents.%20The%20space%20is%20grand%20with%20high%20ceilings%20and%20traditional%20Rajasthani%20architectural%20details.&width=400&height=300&seq=banquet1&orientation=landscape" alt="Banquet Hall" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Grand Banquet Hall</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Beautiful%20Indian%20wedding%20setup%20in%20a%20hotel%20with%20traditional%20decorations%20including%20marigold%20flowers%2C%20colorful%20drapes%2C%20and%20ornate%20mandap%20(wedding%20canopy).%20The%20setup%20features%20rich%20colors%20like%20red%2C%20gold%2C%20and%20orange.%20There%20are%20traditional%20brass%20lamps%2C%20rangoli%20patterns%2C%20and%20elegant%20seating%20arrangements%20for%20guests.&width=400&height=300&seq=wedding1&orientation=landscape" alt="Wedding Setup" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Wedding Celebrations</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://readdy.ai/api/search-image?query=Professional%20business%20conference%20room%20in%20a%20hotel%20with%20modern%20presentation%20equipment%2C%20a%20large%20screen%2C%20and%20comfortable%20seating%20arranged%20in%20rows.%20The%20room%20has%20good%20lighting%2C%20clean%20lines%2C%20and%20a%20professional%20atmosphere.%20There%27s%20a%20podium%20at%20the%20front%20and%20the%20decor%20includes%20subtle%20maroon%20and%20gold%20accents.&width=400&height=300&seq=conference1&orientation=landscape" alt="Conference Room" class="w-full h-64 object-cover gallery-image">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white font-semibold">Conference Facilities</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Experience It Yourself</h2>
+            <p class="text-white opacity-90 mb-8 max-w-2xl mx-auto">
+                Book your stay and create your own memorable moments at Sher-e-Punjab Hotel & Restaurant.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="reservations" class="bg-secondary text-primary px-8 py-3 rounded-button font-semibold text-lg hover:bg-opacity-90 transition-all cta-button">Book Your Stay</a>
+                <a href="contact" class="bg-white text-primary px-8 py-3 rounded-button font-semibold text-lg hover:bg-opacity-90 transition-all cta-button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-['Pacifico'] text-secondary mb-6">Sher-e-Punjab</h3>
+                    <p class="text-gray-400 mb-6">Experience luxury and traditional Rajasthani hospitality in the heart of Abu Road, Rajasthan.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-twitter-x-line text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-tripadvisor-line text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="rooms" class="text-gray-400 hover:text-white transition-colors">Rooms & Suites</a></li>
+                        <li><a href="dining" class="text-gray-400 hover:text-white transition-colors">Dining</a></li>
+                        <li><a href="events" class="text-gray-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="gallery" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="ri-map-pin-line mr-3 mt-1"></i>
+                            <span class="text-gray-400">123 Ambedkar Road, Abu Road, Rajasthan 307026, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-phone-line mr-3"></i>
+                            <span class="text-gray-400">+91 2974 123456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-mail-line mr-3"></i>
+                            <span class="text-gray-400">info@sherepunjabhotel.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="terms" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="cookie-policy" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
+                    </ul>
+
+                    <h4 class="text-lg font-semibold mt-8 mb-4">We Accept</h4>
+                    <div class="flex space-x-3">
+                        <i class="ri-visa-fill ri-lg text-gray-400"></i>
+                        <i class="ri-mastercard-fill ri-lg text-gray-400"></i>
+                        <i class="ri-paypal-fill ri-lg text-gray-400"></i>
+                        <i class="ri-amazon-pay-fill ri-lg text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-500 text-center">&copy; 2025 Sher-e-Punjab Hotel & Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

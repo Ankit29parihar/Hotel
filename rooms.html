@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Luxury Rooms & Suites | Sher-e-Punjab Hotel Abu Road | Deluxe, Premium & Royal Suites</title>
+    <meta name="description" content="Book luxury rooms at Sher-e-Punjab Hotel Abu Road. Choose from Deluxe Rooms (₹5,500), Premium Suites (₹8,500), and Royal Suites (₹12,000). Modern amenities with traditional charm.">
+    <meta name="keywords" content="Abu Road hotel rooms, luxury suites Rajasthan, hotel accommodation Mount Abu, deluxe rooms, premium suites, royal suites, hotel booking">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.sherepunjabhotel.com/rooms">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Luxury Rooms & Suites | Sher-e-Punjab Hotel Abu Road">
+    <meta property="og:description" content="Book luxury rooms at Sher-e-Punjab Hotel Abu Road. Choose from Deluxe Rooms, Premium Suites, and Royal Suites with modern amenities.">
+    <meta property="og:image" content="https://www.sherepunjabhotel.com/images/luxury-room.jpg">
+    <meta property="og:url" content="https://www.sherepunjabhotel.com/rooms">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts and Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: "#800000", secondary: "#FFD700" },
+                    borderRadius: {
+                        none: "0px", sm: "4px", DEFAULT: "8px", md: "12px", lg: "16px", xl: "20px", "2xl": "24px", "3xl": "32px", full: "9999px", button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-primary shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index" class="text-2xl font-['Pacifico'] text-secondary">Sher-e-Punjab</a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index" class="text-white hover:text-secondary transition-colors font-medium">Home</a>
+                <a href="about" class="text-white hover:text-secondary transition-colors font-medium">About</a>
+                <a href="rooms" class="text-secondary font-medium">Rooms</a>
+                <a href="dining" class="text-white hover:text-secondary transition-colors font-medium">Dining</a>
+                <a href="events" class="text-white hover:text-secondary transition-colors font-medium">Events</a>
+                <a href="gallery" class="text-white hover:text-secondary transition-colors font-medium">Gallery</a>
+                <a href="contact" class="text-white hover:text-secondary transition-colors font-medium">Contact</a>
+            </nav>
+
+            <!-- Book Now Button -->
+            <a href="contact" class="hidden md:block bg-secondary text-primary px-6 py-2 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Book Now</a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-menu-line ri-2x"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 bg-primary z-50 shadow-lg pt-16 px-4">
+            <button id="close-menu-button" class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-white">
+                <i class="ri-close-line ri-2x"></i>
+            </button>
+            <div class="flex flex-col space-y-4">
+                <a href="index" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Home</a>
+                <a href="about" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">About</a>
+                <a href="rooms" class="text-secondary font-medium py-2 border-b border-gray-700">Rooms</a>
+                <a href="dining" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Dining</a>
+                <a href="events" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Events</a>
+                <a href="gallery" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Gallery</a>
+                <a href="contact" class="text-white hover:text-secondary transition-colors font-medium py-2 border-b border-gray-700">Contact</a>
+                <a href="contact" class="bg-secondary text-primary px-6 py-2 rounded-button font-semibold hover:bg-opacity-90 transition-all text-center mt-4 whitespace-nowrap">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero flex items-center justify-center pt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Luxurious Rooms & Suites</h1>
+            <p class="text-xl text-white max-w-2xl mx-auto">Experience comfort and elegance in our thoughtfully designed accommodations</p>
+        </div>
+    </section>
+
+    <!-- Room Categories -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Choose Your Perfect Stay</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Each room is designed with your comfort in mind, featuring modern amenities and traditional Rajasthani touches.</p>
+            </div>
+
+            <!-- Deluxe Room -->
+            <div class="mb-16">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <img src="https://readdy.ai/api/search-image?query=Luxurious%20hotel%20deluxe%20room%20with%20a%20king-sized%20bed%20featuring%20premium%20white%20linens%20and%20decorative%20pillows%20in%20maroon%20and%20gold.%20The%20room%20has%20elegant%20wooden%20furniture%2C%20including%20a%20writing%20desk%2C%20bedside%20tables%20with%20lamps%2C%20and%20a%20comfortable%20seating%20area.%20Large%20windows%20offer%20natural%20light%2C%20and%20the%20decor%20features%20subtle%20Rajasthani%20influences.&width=600&height=400&seq=deluxe1&orientation=landscape" alt="Deluxe Room" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-bold mb-4">Deluxe Room</h3>
+                        <p class="text-gray-700 mb-6">
+                            Our Deluxe Rooms offer a perfect blend of comfort and style. Featuring a king-sized bed with premium linens, modern amenities, and elegant furnishings, these rooms provide a relaxing retreat after a day of exploring Rajasthan.
+                        </p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-primary mb-3">Room Features:</h4>
+                            <div class="room-amenities">
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-hotel-bed-line"></i>
+                                    </div>
+                                    <span>King-sized bed</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-air-conditioner-line"></i>
+                                    </div>
+                                    <span>Air conditioning</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-tv-line"></i>
+                                    </div>
+                                    <span>LED TV</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-wifi-line"></i>
+                                    </div>
+                                    <span>Free Wi-Fi</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-safe-line"></i>
+                                    </div>
+                                    <span>In-room safe</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-restaurant-line"></i>
+                                    </div>
+                                    <span>Mini bar</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-3xl font-bold text-primary">₹5,500</span>
+                                <span class="text-gray-600">/night</span>
+                            </div>
+                            <a href="contact" class="bg-secondary text-primary px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Suite -->
+            <div class="mb-16">
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <img src="https://readdy.ai/api/search-image?query=Elegant%20hotel%20premium%20suite%20with%20a%20separate%20living%20area%20and%20bedroom.%20The%20living%20space%20features%20a%20plush%20sofa%2C%20coffee%20table%2C%20and%20entertainment%20unit.%20The%20bedroom%20has%20a%20king-sized%20bed%20with%20premium%20bedding%20in%20rich%20maroon%20and%20gold%20tones.%20The%20room%20includes%20a%20mini%20bar%2C%20work%20desk%2C%20and%20large%20windows%20with%20views.%20The%20decor%20combines%20modern%20luxury%20with%20subtle%20Rajasthani%20design%20elements.&width=600&height=400&seq=premium1&orientation=landscape" alt="Premium Suite" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-bold mb-4">Premium Suite</h3>
+                        <p class="text-gray-700 mb-6">
+                            Experience luxury in our Premium Suites, featuring separate living and sleeping areas. These spacious accommodations are perfect for extended stays or special occasions, offering enhanced amenities and personalized service.
+                        </p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-primary mb-3">Suite Features:</h4>
+                            <div class="room-amenities">
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-home-line"></i>
+                                    </div>
+                                    <span>Separate living area</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-sofa-line"></i>
+                                    </div>
+                                    <span>Premium furniture</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-briefcase-line"></i>
+                                    </div>
+                                    <span>Work desk</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-goblet-line"></i>
+                                    </div>
+                                    <span>Welcome drinks</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-shirt-line"></i>
+                                    </div>
+                                    <span>Laundry service</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-car-line"></i>
+                                    </div>
+                                    <span>Airport pickup</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-3xl font-bold text-primary">₹8,500</span>
+                                <span class="text-gray-600">/night</span>
+                            </div>
+                            <a href="contact" class="bg-secondary text-primary px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Royal Suite -->
+            <div class="mb-16">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <img src="https://readdy.ai/api/search-image?query=Opulent%20hotel%20royal%20suite%20with%20a%20spacious%20layout%20featuring%20a%20grand%20bedroom%2C%20separate%20living%20room%2C%20and%20dining%20area.%20The%20bedroom%20has%20a%20luxurious%20king-sized%20four-poster%20bed%20with%20premium%20silk%20bedding%20in%20rich%20maroon%20and%20gold.%20The%20suite%20includes%20a%20private%20balcony%20with%20views%2C%20a%20marble%20bathroom%20with%20jacuzzi%2C%20and%20elegant%20furniture%20with%20traditional%20Rajasthani%20craftsmanship%20details.&width=600&height=400&seq=royal1&orientation=landscape" alt="Royal Suite" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-bold mb-4">Royal Suite</h3>
+                        <p class="text-gray-700 mb-6">
+                            The pinnacle of luxury, our Royal Suite offers an unparalleled experience with panoramic views, exclusive amenities, and personalized butler service. This opulent accommodation features traditional Rajasthani craftsmanship with modern conveniences.
+                        </p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-primary mb-3">Royal Features:</h4>
+                            <div class="room-amenities">
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-vip-crown-line"></i>
+                                    </div>
+                                    <span>Butler service</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-landscape-line"></i>
+                                    </div>
+                                    <span>Private balcony</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-drop-line"></i>
+                                    </div>
+                                    <span>Jacuzzi bathroom</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-restaurant-2-line"></i>
+                                    </div>
+                                    <span>Private dining</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-gift-line"></i>
+                                    </div>
+                                    <span>Daily amenities</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <div class="amenity-icon">
+                                        <i class="ri-spa-line"></i>
+                                    </div>
+                                    <span>Spa access</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-3xl font-bold text-primary">₹12,000</span>
+                                <span class="text-gray-600">/night</span>
+                            </div>
+                            <a href="contact" class="bg-secondary text-primary px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Amenities -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Standard Amenities in All Rooms</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-wifi-line ri-lg text-white"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Free Wi-Fi</h4>
+                    <p class="text-gray-600 text-sm">High-speed internet</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-air-conditioner-line ri-lg text-white"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Climate Control</h4>
+                    <p class="text-gray-600 text-sm">Individual AC units</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-tv-line ri-lg text-white"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Entertainment</h4>
+                    <p class="text-gray-600 text-sm">LED TV with cable</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-phone-line ri-lg text-white"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Room Service</h4>
+                    <p class="text-gray-600 text-sm">24/7 availability</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-safe-line ri-lg text-white"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Security</h4>
+                    <p class="text-gray-600 text-sm">Electronic safe</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-cup-line ri-lg text-white"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Refreshments</h4>
+                    <p class="text-gray-600 text-sm">Tea/coffee maker</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Experience Luxury?</h2>
+            <p class="text-white opacity-90 mb-8 max-w-2xl mx-auto">
+                Book your perfect room today and enjoy exceptional comfort with traditional Rajasthani hospitality.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact" class="bg-secondary text-primary px-8 py-3 rounded-button font-semibold text-lg hover:bg-opacity-90 transition-all cta-button">Book Your Stay</a>
+                <a href="contact" class="bg-white text-primary px-8 py-3 rounded-button font-semibold text-lg hover:bg-opacity-90 transition-all cta-button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-['Pacifico'] text-secondary mb-6">Sher-e-Punjab</h3>
+                    <p class="text-gray-400 mb-6">Experience luxury and traditional Rajasthani hospitality in the heart of Abu Road, Rajasthan.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-twitter-x-line text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-tripadvisor-line text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="rooms" class="text-gray-400 hover:text-white transition-colors">Rooms & Suites</a></li>
+                        <li><a href="dining" class="text-gray-400 hover:text-white transition-colors">Dining</a></li>
+                        <li><a href="events" class="text-gray-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="gallery" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="ri-map-pin-line mr-3 mt-1"></i>
+                            <span class="text-gray-400">123 Ambedkar Road, Abu Road, Rajasthan 307026, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-phone-line mr-3"></i>
+                            <span class="text-gray-400">+91 2974 123456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-mail-line mr-3"></i>
+                            <span class="text-gray-400">info@sherepunjabhotel.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="terms" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="cookie-policy" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
+                    </ul>
+
+                    <h4 class="text-lg font-semibold mt-8 mb-4">We Accept</h4>
+                    <div class="flex space-x-3">
+                        <i class="ri-visa-fill ri-lg text-gray-400"></i>
+                        <i class="ri-mastercard-fill ri-lg text-gray-400"></i>
+                        <i class="ri-paypal-fill ri-lg text-gray-400"></i>
+                        <i class="ri-amazon-pay-fill ri-lg text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-500 text-center">&copy; 2025 Sher-e-Punjab Hotel & Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
