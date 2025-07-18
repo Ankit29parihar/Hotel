@@ -209,3 +209,25 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
+// swiper js code carosel
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  },
+  loop: true,
+  speed: 1200, // ⬅️ Smooth fade duration
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});

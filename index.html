@@ -94,9 +94,16 @@
     }
     </script>
 
-    <!-- Remix icon -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper css link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Remix icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -139,17 +146,17 @@
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-6">
-        <a href="index" class="text-white hover:text-secondary transition-colors font-medium">Home</a>
-        <a href="about" class="text-white hover:text-secondary transition-colors font-medium">About</a>
-        <a href="rooms" class="text-white hover:text-secondary transition-colors font-medium">Rooms</a>
-        <a href="dining" class="text-white hover:text-secondary transition-colors font-medium">Dining</a>
-        <a href="events" class="text-white hover:text-secondary transition-colors font-medium">Events</a>
-        <a href="gallery" class="text-white hover:text-secondary transition-colors font-medium">Gallery</a>
-        <a href="contact" class="text-white hover:text-secondary transition-colors font-medium">Contact</a>
+        <a href="index.html" class="text-white hover:text-secondary transition-colors font-medium">Home</a>
+        <a href="about.html" class="text-white hover:text-secondary transition-colors font-medium">About</a>
+        <a href="rooms.html" class="text-white hover:text-secondary transition-colors font-medium">Rooms</a>
+        <a href="dining.html" class="text-white hover:text-secondary transition-colors font-medium">Dining</a>
+        <a href="events.html" class="text-white hover:text-secondary transition-colors font-medium">Events</a>
+        <a href="gallery.html" class="text-white hover:text-secondary transition-colors font-medium">Gallery</a>
+        <a href="contact.html" class="text-white hover:text-secondary transition-colors font-medium">Contact</a>
       </nav>
 
       <!-- Book Now Button -->
-      <a href="contact"
+      <a href="contact.html"
         class="hidden md:block bg-secondary text-primary px-6 py-2 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Book
         Now</a>
 
@@ -187,25 +194,59 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section h-screen flex items-center justify-center pt-16">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-        Welcome To Hotel Bhagyalaxmi
-      </h1>
-      <p class="text-xl text-white mb-8 max-w-3xl mx-auto">
-        The best hotel for your familly
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="contact boot-btn"
-          class="bg-secondary text-primary px-8 py-3 rounded-button font-semibold text-lg hover:bg-opacity-90 transition-all cta-button whitespace-nowrap flex items-center gap-2"> <img src="assets/icon/home (1).png" height="20px" width="20px" alt="" > Book
-          Your Stay</a>
-        <a href="dining"
-          class="bg-white text-primary px-8 py-3 rounded-button font-semibold text-lg hover:bg-opacity-90 transition-all cta-button whitespace-nowrap">Explore
-          Dining</a>
+  <section class="relative h-screen text-center">
+    <!-- Swiper -->
+    <div class="swiper mySwiper h-full">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative h-full flex items-center justify-center bg-black/60">
+          <img src="assets/hotel bhagyalaxmi new iamges/1 (20).jpeg" alt="Hotel 1"
+            class="absolute inset-0 w-full h-full object-cover z-[-1]" />
+          <div class="px-4 max-w-4xl mt-20">
+            <h1 class="text-white text-1xl sm:text-2xl md:text-5xl lg:text-5xl font-bold leading-tight mb-6">
+              Welcome To Hotel Bhagyalaxmi
+            </h1>
+
+            <p class="text-white text-base md:text-lg mb-8">
+              Experience comfort, luxury, and warmth at the perfect getaway for your family.
+              Your home away from home — where every stay is memorable and every guest is family.
+            </p>
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 px-4">
+              <a href="contact.html"
+                class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-500 transition-all whitespace-nowrap flex items-center gap-2 w-full sm:w-auto text-center justify-center">
+                <img src="assets/icon/home (1).png" class="h-5 w-5" alt=""> Book Your Stay
+              </a>
+              <a href="dining.html"
+                class="bg-white text-red-700 px-6 py-3 rounded-lg font-semibold text-base sm:text-lg hover:bg-gray-100 transition-all whitespace-nowrap w-full sm:w-auto text-center">
+                Explore Dining
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative h-full flex items-center justify-center bg-black/60">
+          <img src="assets/hotel bhagyalaxmi new iamges/1 (19).jpeg" alt="Hotel 2"
+            class="absolute inset-0 w-full h-full object-cover z-[-1]" />
+          <!-- Same content -->
+          <!-- You can change text if needed -->
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide relative h-full flex items-center justify-center bg-black/60">
+          <img src="assets/hotel bhagyalaxmi new iamges/1 (18).jpeg" alt="Hotel 3"
+            class="absolute inset-0 w-full h-full object-cover z-[-1]" />
+          <!-- Same content -->
+        </div>
+
       </div>
     </div>
   </section>
+
+
+
 
 
   <!-- Features Section -->
@@ -270,7 +311,7 @@
         </div>
         <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md text-center">
           <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 amenities-icon">
-           <i class="fa-solid fa-square-parking"></i>
+            <i class="fa-solid fa-square-parking"></i>
           </div>
           <h3 class="text-xl font-semibold mb-3">Free Parking</h3>
           <p class="text-gray-600">
@@ -317,27 +358,26 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
-          <img
-            src="https://readdy.ai/api/search-image?query=Elegant%20hotel%20exterior%20with%20traditional%20Rajasthani%20architecture%2C%20featuring%20ornate%20arches%2C%20domes%2C%20and%20intricate%20stone%20carvings.%20The%20building%20has%20a%20warm%2C%20inviting%20facade%20with%20maroon%20and%20gold%20accents.%20Beautiful%20landscaped%20gardens%20surround%20the%20entrance%20with%20native%20plants%20and%20flowers.%20The%20entrance%20has%20a%20grand%20driveway%20with%20a%20traditional%20welcome%20area.&width=600&height=400&seq=hotel2&orientation=landscape"
-            alt="Sher-e-Punjab Hotel" class="rounded-lg shadow-lg w-full h-auto object-cover" />
+          <img src="assets/images/event images/dulha dulhan stage"
+            class="rounded-lg shadow-lg w-full h-auto object-cover" />
         </div>
         <div class="md:w-1/2">
-          <h2 class="text-3xl font-bold mb-6">Overview About Us</h2>
+          <h2 class="text-1xl font-bold mb-6 text-red-800">Welcome to</h2>
+          <h2 class="text-3xl font-bold mb-6">Hotel Bhagyalaxmi</h2>
           <p class="text-gray-700 mb-4">
-            Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
+            in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
             landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance,
-            and warm hospitality. Located in the heart of Rajasthan, our hotel offers a tranquil retreat for both
-            business and leisure travelers.
+            and warm hospitality. Located in the heart of Rajasthan.
           </p>
-          <!-- <p class="text-gray-700 mb-6">
-            Located at the gateway to Mount Abu, we offer a perfect blend of
-            comfort, convenience, and cultural immersion. Whether you're
-            traveling for business or leisure, our dedicated team ensures your
-            stay is nothing short of exceptional.
-          </p> -->
+          <p class="text-gray-700 mb-6">
+            Our hotel offers a tranquil retreat for both business and leisure travelers. Step into our inviting lobby,
+            where our friendly staff awaits to cater to your every need. As you make your way to our thoughtfully
+            designed rooms, you’ll discover a sanctuary of relaxation and rejuvenation. Each room is tastefully
+            appointed with modern amenities, ensuring a comfortable stay that exceeds your expectations.
+          </p>
           <a href="about"
-            class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Learn
-            More About Us</a>
+            class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Read
+            More</a>
         </div>
       </div>
     </div>
@@ -346,25 +386,31 @@
   <!-- Room Showcase -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-4">
-        Luxurious Accommodations
-      </h2>
+      <h2 class="text-3xl font-bold text-center mb-4">Luxurious Accommodations</h2>
       <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
         Choose <strong>THE BEST FOR YOUR FAMILY</strong> from our range of elegantly designed rooms and suites, each
         offering a perfect blend of comfort and luxury.
       </p>
 
-
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room1.jpg"
-            alt="Deluxe Room" class="w-full h-64 object-cover object-top" />
+          <a href="room1.html">
+            <div class="relative group">
+              <img src="assets/room's/room1.jpg" alt="Deluxe Room" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">2 Sharing Luxury Room</h3>
-            <p class="text-gray-600 mb-4">
-              All our Family Room have big windows to help you take a broad view of the cityscape and nature.
-            </p>
+            <p class="text-gray-600 mb-4">All our Family Room have big windows to help you take a broad view of the
+              cityscape and nature.</p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹2,500.00/ Day</span>
               <a href="contact"
@@ -374,15 +420,23 @@
           </div>
         </div>
 
+        <!-- Card 2 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room4.jpg"
-            alt="Premium Suite" class="w-full h-64 object-cover object-top" />
+          <a href="room2.html">
+            <div class="relative group">
+              <img src="assets/room's/room4.jpg" alt="Premium Suite" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Luxury Room Four Sharing</h3>
-            <p class="text-gray-600 mb-4">
-              All our Vintage Room have big windows to help you take a broad view of the cityscape and nature.
-            </p>
+            <p class="text-gray-600 mb-4">All our Vintage Room have big windows to help you take a broad view of the
+              cityscape and nature.</p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹3,500.00/ Day</span>
               <a href="contact"
@@ -392,15 +446,23 @@
           </div>
         </div>
 
+        <!-- Card 3 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room5.jpg"
-            alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+          <a href="room3.html">
+            <div class="relative group">
+              <img src="assets/room's/room5.jpg" alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Deluxe Room</h3>
-            <p class="text-gray-600 mb-4">
-              All our Deluxe Room have big windows to help you take a broad view of the cityscape and nature.
-            </p>
+            <p class="text-gray-600 mb-4">All our Deluxe Room have big windows to help you take a broad view of the
+              cityscape and nature.</p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹2,800.00/ Day</span>
               <a href="contact"
@@ -409,15 +471,24 @@
             </div>
           </div>
         </div>
+
+        <!-- Card 4 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room3.jpg"
-            alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+          <a href="room4.html">
+            <div class="relative group">
+              <img src="assets/room's/room3.jpg" alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Deluxe Room Triple Sharing</h3>
-            <p class="text-gray-600 mb-4">
-             All our Standard Room 2 have big windows to help you take a broad view of the cityscape and nature.
-            </p>
+            <p class="text-gray-600 mb-4">All our Standard Room 2 have big windows to help you take a broad view of the
+              cityscape and nature.</p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹2,000.00/ Day</span>
               <a href="contact"
@@ -426,15 +497,24 @@
             </div>
           </div>
         </div>
+
+        <!-- Card 5 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room2.jpg"
-            alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+          <a href="room5.html">
+            <div class="relative group">
+              <img src="assets/room's/room2.jpg" alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Deluxe Room Four Bed</h3>
-            <p class="text-gray-600 mb-4">
-            All our Single Room 2 have big windows to help you take a broad view of the cityscape and nature.
-            </p>
+            <p class="text-gray-600 mb-4">All our Single Room 2 have big windows to help you take a broad view of the
+              cityscape and nature.</p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹2,800.00/ Day</span>
               <a href="contact"
@@ -443,39 +523,43 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="text-center mt-10">
-        <a href="rooms"
-          class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">View
-          All Rooms</a>
+        <a href="room.html"
+          class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">
+          View All Rooms
+        </a>
       </div>
     </div>
   </section>
 
 
 
+
   <!-- Events -->
- <section class="py-16 bg-gray-50">
+  <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-4">
         Events
       </h2>
       <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-       Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
       </p>
 
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
-          <img
-            src="assets/images/ShubhTithi-0.jpg"
-            alt="Restaurant" class="rounded-lg shadow-lg w-full h-auto object-cover" />
+          <img src="assets/images/ShubhTithi-0.jpg" alt="Restaurant"
+            class="rounded-lg shadow-lg w-full h-auto object-cover transition-transform duration-300 relative hover:-translate-x-2" />
         </div>
         <div class="md:w-1/2">
-            <h4 class="font-semibold text-primary mb-2">SERVICE</h4>
+          <h4 class="font-semibold text-primary mb-2">SERVICE</h4>
           <h3 class="text-2xl font-semibold mb-4">Elegant Weddings Service</h3>
           <p class="text-gray-700 mb-6">
-            Planning a wedding requires attention to detail, organization, and effective communication. Don't hesitate to ask for help from friends, family, or professionals if needed. Enjoy the process, and may your wedding day be a truly special and memorable occasion!
+            Planning a wedding requires attention to detail, organization, and effective communication. Don't hesitate
+            to ask for help from friends, family, or professionals if needed. Enjoy the process, and may your wedding
+            day be a truly special and memorable occasion!
           </p>
 
           <!-- <div class="mb-6">
@@ -485,18 +569,19 @@
             <p class="text-gray-700">Dinner: 7:00 PM - 11:00 PM</p>
           </div> -->
 
-          <a href="dining"
+          <a href="events.html"
             class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Explore
             More</a>
         </div>
       </div>
 
-     <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
-            <h4 class="font-semibold text-primary mb-2">SERVICE</h4>
+          <h4 class="font-semibold text-primary mb-2">SERVICE</h4>
           <h3 class="text-2xl font-semibold mb-4">Private Birthday</h3>
           <p class="text-gray-700 mb-6">
-         Birthdays are about celebrating you and creating joyful memories. Feel free to customize your celebration based on your preferences and interests. Enjoy your special day to the fullest!
+            Birthdays are about celebrating you and creating joyful memories. Feel free to customize your celebration
+            based on your preferences and interests. Enjoy your special day to the fullest!
           </p>
 
           <!-- <div class="mb-6">
@@ -506,27 +591,26 @@
             <p class="text-gray-700">Dinner: 7:00 PM - 11:00 PM</p>
           </div> -->
 
-          <a href="dining"
+          <a href="events.html"
             class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Explore
             More</a>
         </div>
         <div class="md:w-1/2">
-          <img
-            src="assets/images/Birthday-party.jpg"
-            alt="Restaurant" class="rounded-lg shadow-lg w-full h-auto object-cover" />
+          <img src="assets/images/Birthday-party.jpg" alt="Restaurant"
+            class="rounded-lg shadow-lg w-full h-auto object-cover transition-transform duration-300 relative hover:translate-x-2" />
         </div>
       </div>
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
-          <img
-            src="assets/images/anniversary-party.png"
-            alt="Restaurant" class="rounded-lg shadow-lg w-full h-auto object-cover" />
-        </div> 
+          <img src="assets/images/anniversary-party.png" alt="Restaurant"
+            class="rounded-lg shadow-lg w-full h-auto object-cover" />
+        </div>
         <div class="md:w-1/2">
-            <h4 class="font-semibold text-primary mb-2">SERVICE</h4>
+          <h4 class="font-semibold text-primary mb-2">SERVICE</h4>
           <h3 class="text-2xl font-semibold mb-4">Anniversary</h3>
           <p class="text-gray-700 mb-6">
-           An anniversary celebration is a beautiful opportunity to honor your commitment and love for each other. Customize your celebration to reflect your unique relationship and enjoy this special milestone together.
+            An anniversary celebration is a beautiful opportunity to honor your commitment and love for each other.
+            Customize your celebration to reflect your unique relationship and enjoy this special milestone together.
           </p>
 
           <!-- <div class="mb-6">
@@ -536,17 +620,19 @@
             <p class="text-gray-700">Dinner: 7:00 PM - 11:00 PM</p>
           </div> -->
 
-          <a href="dining"
+          <a href="events.html"
             class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Explore
             More</a>
         </div>
       </div>
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
-            <h4 class="font-semibold text-primary mb-2">SERVICE</h4>
+          <h4 class="font-semibold text-primary mb-2">SERVICE</h4>
           <h3 class="text-2xl font-semibold mb-4">Baby Shower</h3>
           <p class="text-gray-700 mb-6">
-          Baby shower is a celebration of the upcoming arrival of a baby and an opportunity for loved ones to come together and show support for the expectant parent(s). Customize your baby shower to reflect your personal style and preferences, and create a memorable event for all involved.
+            Baby shower is a celebration of the upcoming arrival of a baby and an opportunity for loved ones to come
+            together and show support for the expectant parent(s). Customize your baby shower to reflect your personal
+            style and preferences, and create a memorable event for all involved.
           </p>
 
           <!-- <div class="mb-6">
@@ -556,14 +642,13 @@
             <p class="text-gray-700">Dinner: 7:00 PM - 11:00 PM</p>
           </div> -->
 
-          <a href="dining"
+          <a href="events.html"
             class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">Explore
             More</a>
         </div>
         <div class="md:w-1/2">
-          <img
-            src="assets/images/Baby Shover.png"
-            alt="Restaurant" class="rounded-lg shadow-lg w-full h-auto object-cover" />
+          <img src="assets/images/Baby Shover.png" alt="Restaurant"
+            class="rounded-lg shadow-lg w-full h-auto object-cover" />
         </div>
       </div>
     </div>
@@ -647,9 +732,12 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
+
 
   <!-- Gallery Preview -->
   <section class="py-16 bg-gray-50">
@@ -660,25 +748,21 @@
       </p>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img
-          src="assets/images/anniversary-party.png"
-          alt="Hotel Lobby" class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
+        <img src="assets/images/anniversary-party.png" alt="Hotel Lobby"
+          class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
 
-        <img
-          src="assets/images/860de4cc-ea12-4ad7-8bed-6e4b40bc7bec.jpg"
-          alt="Swimming Pool" class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
+        <img src="assets/images/Baby Shover.png" alt="Swimming Pool"
+          class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
 
-        <img
-          src="assets/images/Birthday-party.jpg"
-          alt="Spa" class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
+        <img src="assets/images/Birthday-party.jpg" alt="Spa"
+          class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
 
-        <img
-          src="assets/images/anniversary-party.png"
-          alt="Banquet Hall" class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
+        <img src="assets/images/anniversary-party.png" alt="Banquet Hall"
+          class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
       </div>
 
       <div class="text-center mt-10">
-        <a href="gallery"
+        <a href="gallery.html"
           class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">View
           Full Gallery</a>
       </div>
@@ -706,7 +790,7 @@
             <h4 class="font-semibold text-primary mb-2">Address:</h4>
             <p class="text-gray-700">Mount Road, Talheti,</p>
             <p class="text-gray-700">Abu Road,</p>
-            <p class="text-gray-700"> Rajasthan-  307510</p>
+            <p class="text-gray-700"> Rajasthan- 307510</p>
             <p class="text-gray-700">India</p>
           </div>
 
@@ -761,10 +845,12 @@
         <div>
           <h3 class="text-xl font-['Pacifico'] text-secondary mb-6">
             <a href="index" class="text-2xl font-['Pacifico'] text-secondary"><img src="assets/logo-4.png" alt=""
-          height="90px" width="90px"></a>
+                height="90px" width="90px"></a>
           </h3>
           <p class="text-gray-400 mb-6">
-            Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance, and warm hospitality.
+            Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
+            landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance,
+            and warm hospitality.
           </p>
           <div class="flex space-x-4">
             <a href="#"
@@ -862,6 +948,10 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- swiper js link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script src="script.js"></script>
 </body>

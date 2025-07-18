@@ -1,9 +1,10 @@
+
 :where([class^="ri-"])::before {
   content: "\f3c2";
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+    /* font-family: montserrate; */
   color: #333;
 }
 
@@ -301,6 +302,7 @@ input:checked + .slider:before {
   background-color: #fef7f7;
 }
 
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -419,4 +421,19 @@ input:checked + .slider:before {
   .room-amenities {
     grid-template-columns: 1fr;
   }
+}
+
+
+@font-face {
+  font-family: kiaB;
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+  src: url("https://www.kia.com/content/dam/kwcms/gt/en/font/font_optimization_201808/KiaSignatureBold.eot");
+  src: url("https://www.kia.com/content/dam/kwcms/gt/en/font/font_optimization_201808/KiaSignatureBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.kia.com/content/dam/kwcms/gt/en/font/font_optimization_201808/KiaSignatureBold.woff2")
+      format("woff2"),
+    url("https://www.kia.com/content/dam/kwcms/gt/en/font/font_optimization_201808/KiaSignatureBold.woff")
+      format("woff");
 }
