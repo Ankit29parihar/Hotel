@@ -1,11 +1,83 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :where([class^="ri-"])::before {
   content: "\f3c2";
 }
 
+
 body {
-    /* font-family: montserrate; */
   color: #333;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  background: #f9fafb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  color: #800000;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 1.1;
+}
+h2 {
+  font-size: 2.2rem;
+  line-height: 1.15;
+}
+h3 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+h5 {
+  font-size: 1.1rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+p, li, .body-text, .feature-card p, .room-card p, .testimonial-card p, .gallery-image-caption {
+  font-family: "Mooli", sans-serif;
+  font-size: 1.05rem;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 1em;
+  letter-spacing: 0.01em;
+}
+
+.feature-card h3,
+.room-card h3,
+.testimonial-card h4,
+.gallery-image-caption {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  color: #800000;
+}
+
+/* Button and CTA styles for modern look */
+.cta-button,
+.room-card a,
+.feature-card a {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(128,0,0,0.08);
 }
 
 .logo {
@@ -16,6 +88,7 @@ body {
   display: inline-block;
 }
 
+/* hero carosel */
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/assets/images/12.jpg");
@@ -26,6 +99,23 @@ body {
 .room-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.zoom-img {
+  animation: zoomPan 8s ease-in-out infinite;
+  transform-origin: left center;
+}
+
+@keyframes zoomPan {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: translateX(-2%); /* if add zoom effect add scale  scale(1.1)  */
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
 }
 
 /* featured Section */
@@ -405,6 +495,26 @@ input:checked + .slider:before {
   color: #800000;
 }
 
+
+/* footer */
+footer ul li a {
+  font-size: 0.875rem;
+  opacity: 1 !important;
+  color: #fff !important;
+}
+
+footer #quick-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+footer #contact-us {
+  position: relative;
+  left: -20%;
+}
 @media (max-width: 768px) {
   .hero-section {
     height: 70vh;
@@ -422,6 +532,14 @@ input:checked + .slider:before {
     grid-template-columns: 1fr;
   }
 }
+
+/* service hidden in mobile */
+@media screen and (max-width: 639px) {
+    .hide-service-heading {
+      display: none !important;
+    }
+  }
+
 
 
 @font-face {

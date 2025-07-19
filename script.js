@@ -183,6 +183,24 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
+  // GSAP Scroll Animations for sections
+  if (window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.gsap-animate').forEach(section => {
+      gsap.from(section, {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          toggleActions: 'play none none none',
+          stagger: 0.2,
+        }
+      });
+    });
+  }
   // Animate elements on scroll
   const observerOptions = {
     threshold: 0.1,
@@ -231,3 +249,65 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev"
   }
 });
+
+
+
+
+// terminology swiper js code
+document.addEventListener("DOMContentLoaded", function () {
+  new Swiper(".testimonialsSwiper", {
+    loop: true,
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    speed: 900,
+    effect: 'slide',
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".testimonialsSwiper .swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+});
+
+// <!-- Glightbox JS -->
+
+const lightbox = GLightbox({
+  selector: '.glightbox',
+  touchNavigation: true,
+  loop: true,
+  zoomable: true
+});
+
+// nav gsap animation
+var tl = gsap.timeline();
+
+
+var header = document.querySelector("#header");
+var navItems = document.querySelectorAll("nav a");
+
+tl.from(header, {
+  y: -100,     // Optional: from left side (adjust as needed)
+  opacity: 0,  // Optional: fade in
+  duration: 0.8,
+  delay: 0.5,
+  ease: "power2.out"
+});
+
+// tl.from(navItems, {
+//   y: -50,     // Optional: from left side (adjust as needed)
+//   opacity: 0,  // Optional: fade in
+//   duration: 0.6,
+//   delay: 0.5,
+//   stagger: 0.2,
+//   ease: "power2.out"
+// });
