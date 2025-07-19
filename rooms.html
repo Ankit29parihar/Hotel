@@ -187,39 +187,45 @@
     </div>
   </header>
 
- <!-- Page Hero -->
-    <section class="page-hero flex items-center justify-center pt-16">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Luxurious Rooms & Suites</h1>
-            <p class="text-xl text-white max-w-2xl mx-auto">Experience comfort and elegance in our thoughtfully designed accommodations</p>
-        </div>
-    </section>
 
+
+        <!-- Page Hero -->
+<section class="page-hero relative flex items-center justify-center pt-16">
+  <img src="assets/hotel bhagyalaxmi new iamges/1 (34).jpeg" alt="About Hotel" class="absolute inset-0 w-full h-full object-cover z-[-1]" />
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Luxurious Rooms & Suites</h1>
+    <p class="text-xl text-white max-w-2xl mx-auto">
+     Experience comfort and elegance in our thoughtfully designed accommodations
+    </p>
+  </div>
+</section>
  
   <!-- Room Showcase -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-white gsap-animate">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-4">
-        Luxurious Accommodations
-      </h2>
+      <h2 class="text-3xl font-bold text-center mb-4">Luxurious Accommodations</h2>
       <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
         Choose <strong>THE BEST FOR YOUR FAMILY</strong> from our range of elegantly designed rooms and suites, each
         offering a perfect blend of comfort and luxury.
       </p>
 
-    
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
+
+        <!-- Card 1 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room1.jpg"
-            alt="Deluxe Room" class="w-full h-64 object-cover object-top" />
-            <a href="room1.html">
+          <a href="room1.html">
+            <div class="relative group">
+              <img src="assets/room's/room1.jpg" alt="Deluxe Room" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">2 Sharing Luxury Room</h3>
-            <p class="text-gray-600 mb-4">
-              All our Family Room have big windows to help you take a broad view of the cityscape and nature.
-            </p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹2,500.00/ Day</span>
               <a href="contact"
@@ -227,20 +233,23 @@
                 Now</a>
             </div>
           </div>
-          </a>
         </div>
-       
-        
+
+        <!-- Card 2 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room4.jpg"
-            alt="Premium Suite" class="w-full h-64 object-cover object-top" />
-            <a href="room2.html">
+          <a href="room2.html">
+            <div class="relative group">
+              <img src="assets/room's/room4.jpg" alt="Premium Suite" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Luxury Room Four Sharing</h3>
-            <p class="text-gray-600 mb-4">
-              All our Vintage Room have big windows to help you take a broad view of the cityscape and nature.
-            </p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹3,500.00/ Day</span>
               <a href="contact"
@@ -248,18 +257,23 @@
                 Now</a>
             </div>
           </div>
-          </a>
         </div>
 
+        <!-- Card 3 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room5.jpg"
-            alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+          <a href="room3.html">
+            <div class="relative group">
+              <img src="assets/room's/room5.jpg" alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Deluxe Room</h3>
-            <p class="text-gray-600 mb-4">
-              All our Deluxe Room have big windows to help you take a broad view of the cityscape and nature.
-            </p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹2,800.00/ Day</span>
               <a href="contact"
@@ -268,15 +282,22 @@
             </div>
           </div>
         </div>
+
+        <!-- Card 4 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room3.jpg"
-            alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+          <a href="room4.html">
+            <div class="relative group">
+              <img src="assets/room's/room3.jpg" alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Deluxe Room Triple Sharing</h3>
-            <p class="text-gray-600 mb-4">
-             All our Standard Room 2 have big windows to help you take a broad view of the cityscape and nature.
-            </p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹2,000.00/ Day</span>
               <a href="contact"
@@ -285,15 +306,22 @@
             </div>
           </div>
         </div>
+
+        <!-- Card 5 -->
         <div class="room-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition-all">
-          <img
-            src="assets/room's/room2.jpg"
-            alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+          <a href="room5.html">
+            <div class="relative group">
+              <img src="assets/room's/room2.jpg" alt="Royal Suite" class="w-full h-64 object-cover object-top" />
+              <div
+                class="absolute inset-0 bg-red-500 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 z-10">
+                <div class="opacity-0 group-hover:opacity-100 transition-all duration-300 text-white text-3xl">
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+            </div>
+          </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Deluxe Room Four Bed</h3>
-            <p class="text-gray-600 mb-4">
-            All our Single Room 2 have big windows to help you take a broad view of the cityscape and nature.
-            </p>
             <div class="flex items-center justify-between">
               <span class="text-primary font-bold">₹2,800.00/ Day</span>
               <a href="contact"
@@ -302,143 +330,120 @@
             </div>
           </div>
         </div>
+
       </div>
 
-      <div class="text-center mt-10">
-        <a href="room.html"
-          class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">View
-          All Rooms</a>
-      </div>
+      
     </div>
   </section>
 
 
 
 
-  <!-- Gallery Preview -->
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-4">Photo Gallery</h2>
-      <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-        Take a visual tour of our hotel, restaurant, and facilities.
-      </p>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img
-          src="assets/images/anniversary-party.png"
-          alt="Hotel Lobby" class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
 
-        <img
-          src="assets/images/Baby Shover.png"
-          alt="Swimming Pool" class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
-
-        <img
-          src="assets/images/Birthday-party.jpg"
-          alt="Spa" class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
-
-        <img
-          src="assets/images/anniversary-party.png"
-          alt="Banquet Hall" class="w-full h-64 object-cover rounded-lg shadow-md gallery-image" />
-      </div>
-
-      <div class="text-center mt-10">
-        <a href="gallery"
-          class="inline-block bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">View
-          Full Gallery</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Location Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-4">Our Location</h2>
-      <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-        Conveniently located in Abu Road, Rajasthan, with easy access to major
-        attractions and transportation hubs.
-      </p>
-
-      <div class="flex flex-col md:flex-row gap-12">
-        <div class="md:w-1/2 h-96 rounded-lg overflow-hidden shadow-lg"
-          style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;">
-        </div>
-
-        <div class="md:w-1/2">
-          <h3 class="text-2xl font-semibold mb-4">Find Us</h3>
-
-          <div class="mb-6">
-            <h4 class="font-semibold text-primary mb-2">Address:</h4>
-            <p class="text-gray-700">Mount Road, Talheti,</p>
-            <p class="text-gray-700">Abu Road,</p>
-            <p class="text-gray-700"> Rajasthan-  307510</p>
-            <p class="text-gray-700">India</p>
-          </div>
-
-          <div class="mb-6">
-            <h4 class="font-semibold text-primary mb-2">Contact:</h4>
-            <p class="text-gray-700">Phone: +91 94144-28362 | +91 98298-07723</p>
-            <p class="text-gray-700">Email: bhagyalaxmi.abr@gmail.com</p>
-          </div>
-
-          <div>
-            <h4 class="font-semibold text-primary mb-2">
-              Nearby Attractions:
-            </h4>
-            <ul class="text-gray-700 list-disc pl-5">
-              <li>Mount Abu (25 km)</li>
-              <li>Dilwara Temples (30 km)</li>
-              <li>Nakki Lake (28 km)</li>
-              <li>Abu Road Railway Station (2 km)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Newsletter Section -->
-  <section class="py-16 bg-primary">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-white mb-4">
-        Subscribe to Our Newsletter
-      </h2>
-      <p class="text-white opacity-90 mb-8 max-w-2xl mx-auto">
-        Stay updated with our latest offers, events, and promotions by
-        subscribing to our newsletter.
-      </p>
-
-      <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
-        <input type="email" placeholder="Your email address"
-          class="flex-grow px-4 py-3 rounded-button border-none focus:ring-2 focus:ring-secondary" />
-        <button type="submit"
-          class="bg-secondary text-primary px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">
-          Subscribe
-        </button>
-      </form>
-    </div>
-  </section>
 
             <!-- Footer -->
-  <footer class="bg-gray-900 text-white pt-16 pb-8">
-    <div class="container mx-auto px-1">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-2 mb-12">
-        <div >
+<section id="footer">
+  <!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8 hidden sm:block">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+      <!-- Logo + Description -->
+      <div>
+        <h3 class="text-xl font-['Pacifico'] text-white mb-6">
+          <a href="index.html">
+            <img src="assets/logo-4.png" alt="Hotel Logo" height="90px" width="90px">
+          </a>
+        </h3>
+        <p class="text-white mb-6 text-sm">
+          Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
+          landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance,
+          and warm hospitality.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
+            <i class="ri-facebook-fill text-white"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
+            <i class="ri-instagram-line text-white"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div id="quick-links">
+        <h4 class="text-lg font-semibold mb-2 text-white text-center">Quick Links</h4>
+        <ul class="space-y-1 text-center">
+          <li><a href="index.html" class="hover:text-yellow-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-400 transition-colors">About Us</a></li>
+          <li><a href="rooms.html" class="hover:text-yellow-400 transition-colors">Rooms & Suites</a></li>
+          <li><a href="dining.html" class="hover:text-yellow-400 transition-colors">Dining</a></li>
+          <li><a href="events.html" class="hover:text-yellow-400 transition-colors">Events</a></li>
+          <li><a href="gallery.html" class="hover:text-yellow-400 transition-colors">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2 text-white">Legal</h4>
+        <ul class="space-y-1">
+          <li><a href="terms" class="hover:text-yellow-400 transition-colors">Terms & Conditions</a></li>
+          <li><a href="privacy-policy" class="hover:text-yellow-400 transition-colors">Privacy Policy</a></li>
+          <li><a href="cookie-policy" class="hover:text-yellow-400 transition-colors">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact-us">
+        <h4 class="text-lg font-semibold mb-2 text-white text-center">Contact Us</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start">
+            <i class="ri-map-pin-line mr-3 mt-1"></i>
+            <span class="text-white">Mount Road, Talheti, Abu Road, Rajasthan- 307510</span>
+          </li>
+          <li class="flex items-center">
+            <i class="ri-phone-line mr-3"></i>
+            <span class="text-white">+91 94144-28362 | +91 98298-07723</span>
+          </li>
+          <li class="flex items-center">
+            <i class="ri-mail-line mr-3"></i>
+            <span class="text-white break-all">bhagyalaxmi.abr@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="border-t border-gray-800 pt-8">
+      <p class="text-gray-400 text-center text-sm">
+        &copy; 2025 Hotel Bhagyalaxmi & Restaurant. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+  <!-- footer mobile -->
+   <footer class="bg-gray-900 w-100 text-white pt-10 pb-8  block sm:hidden">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col justify-center items-center">
           <h3 class="text-xl font-['Pacifico'] text-secondary mb-6">
             <a href="index" class="text-2xl font-['Pacifico'] text-secondary"><img src="assets/logo-4.png" alt=""
                 height="90px" width="90px"></a>
           </h3>
-          <p class="text-gray-400 mb-6 text-sm">
+          <p class="text-white mb-6 text-sm">
             Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
             landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance,
             and warm hospitality.
           </p>
           <div class="flex space-x-4">
             <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
               <i class="ri-facebook-fill text-white"></i>
             </a>
             <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
               <i class="ri-instagram-line text-white"></i>
             </a>
             <!-- <a href="#"
@@ -452,35 +457,36 @@
           </div>
         </div>
 
-        <div id="quick-links">
-          <h4 class="text-lg font-semibold mb-2 text-gray-400 text-center">Quick Links</h4>
-          <ul class="space-y-1 mx-auto">
+        <div class="flex justify-start">
+          <div class="mx-10">
+          <h4 class="font-semibold mb-6 text-white" id="links-heading">Quick Links</h4>
+          <ul class="space-y-1">
             <li>
-              <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+              <a href="index.html" class=" hover:text-white transition-colors">Home</a>
             </li>
             <li>
-              <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+              <a href="about.html" class=" hover:text-white transition-colors">About Us</a>
             </li>
             <li>
-              <a href="rooms.html" class="text-gray-400 hover:text-white transition-colors">Rooms & Suites</a>
+              <a href="rooms.html" class=" hover:text-white transition-colors">Rooms & Suites</a>
             </li>
             <li>
-              <a href="dining.html" class="text-gray-400 hover:text-white transition-colors">Dining</a>
+              <a href="dining.html" class=" hover:text-white transition-colors">Dining</a>
             </li>
             <li>
-              <a href="events.html" class="text-gray-400 hover:text-white transition-colors">Events</a>
+              <a href="events.html" class=" hover:text-white transition-colors">Events</a>
             </li>
             <li>
-              <a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a>
+              <a href="gallery.html" class=" hover:text-white transition-colors">Gallery</a>
             </li>
             <li>
-              <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+              <a href="contact.html" class=" hover:text-white transition-colors">Contact</a>
             </li>
           </ul>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold mb-2 text-gray-400">Legal</h4>
+          </div>
+           <div>
+            
+          <h4 class="font-semibold mb-6 text-white" id="links-heading">Legal</h4>
           <ul class="space-y-1">
             <li>
               <a href="terms" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a>
@@ -494,9 +500,10 @@
           </ul>
 
         </div>
-        
-        <div id="contact-us">
-          <h4 class="text-lg font-semibold mb-2 text-gray-400 text-center">Contact Us</h4>
+        </div>
+
+        <div class="">
+          <h4 class="font-semibold mb-6 text-white text-center" id="links-heading">Contact Us</h4>
           <ul class="space-y-3">
             <li class="flex items-start">
               <i class="ri-map-pin-line mr-3 mt-1"></i>
@@ -512,15 +519,18 @@
             </li>
           </ul>
         </div>
+
+       
       </div>
 
       <div class="border-t border-gray-800 pt-8">
-        <p class="text-gray-500 text-center">
+        <p class="text-white text-center">
           &copy; 2025 Hotel Bhagyalaxmi & Restaurant. All rights reserved.
         </p>
       </div>
     </div>
   </footer>
+</section>
 
   <script src="script.js"></script>
 </body>

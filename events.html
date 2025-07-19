@@ -102,16 +102,20 @@
     </div>
   </header>
 
-    <!-- Page Hero -->
-    <section class="page-hero flex items-center justify-center pt-16">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Events & Celebrations</h1>
-            <p class="text-xl text-white max-w-2xl mx-auto">Create unforgettable memories with our exceptional event
-                planning services</p>
-        </div>
-    </section>
+            <!-- Page Hero -->
+<section class="page-hero relative flex items-center justify-center pt-16">
+  <img src="assets/images/ShubhTithi-0.jpg" alt="About Hotel" class="absolute inset-0 w-full h-full object-cover z-[-1]" />
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Events & Celebrations</h1>
+    <p class="text-xl text-white max-w-2xl mx-auto">
+    Create unforgettable memories with our exceptional event
+                planning services
+    </p>
+  </div>
+</section>
 
-    <!-- Event Types -->
+     <!-- Event Types -->
+
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Perfect Venues for Every Occasion</h2>
@@ -504,26 +508,106 @@
 
  
             <!-- Footer -->
-  <footer class="bg-gray-900 text-white pt-16 pb-8">
-    <div class="container mx-auto px-1">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-2 mb-12">
-        <div >
+<section id="footer">
+  <!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8 hidden sm:block">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+      <!-- Logo + Description -->
+      <div>
+        <h3 class="text-xl font-['Pacifico'] text-white mb-6">
+          <a href="index.html">
+            <img src="assets/logo-4.png" alt="Hotel Logo" height="90px" width="90px">
+          </a>
+        </h3>
+        <p class="text-white mb-6 text-sm">
+          Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
+          landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance,
+          and warm hospitality.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
+            <i class="ri-facebook-fill text-white"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
+            <i class="ri-instagram-line text-white"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div id="quick-links">
+        <h4 class="text-lg font-semibold mb-2 text-white text-center">Quick Links</h4>
+        <ul class="space-y-1 text-center">
+          <li><a href="index.html" class="hover:text-yellow-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-400 transition-colors">About Us</a></li>
+          <li><a href="rooms.html" class="hover:text-yellow-400 transition-colors">Rooms & Suites</a></li>
+          <li><a href="dining.html" class="hover:text-yellow-400 transition-colors">Dining</a></li>
+          <li><a href="events.html" class="hover:text-yellow-400 transition-colors">Events</a></li>
+          <li><a href="gallery.html" class="hover:text-yellow-400 transition-colors">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2 text-white">Legal</h4>
+        <ul class="space-y-1">
+          <li><a href="terms" class="hover:text-yellow-400 transition-colors">Terms & Conditions</a></li>
+          <li><a href="privacy-policy" class="hover:text-yellow-400 transition-colors">Privacy Policy</a></li>
+          <li><a href="cookie-policy" class="hover:text-yellow-400 transition-colors">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact-us">
+        <h4 class="text-lg font-semibold mb-2 text-white text-center">Contact Us</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start">
+            <i class="ri-map-pin-line mr-3 mt-1"></i>
+            <span class="text-white">Mount Road, Talheti, Abu Road, Rajasthan- 307510</span>
+          </li>
+          <li class="flex items-center">
+            <i class="ri-phone-line mr-3"></i>
+            <span class="text-white">+91 94144-28362 | +91 98298-07723</span>
+          </li>
+          <li class="flex items-center">
+            <i class="ri-mail-line mr-3"></i>
+            <span class="text-white break-all">bhagyalaxmi.abr@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="border-t border-gray-800 pt-8">
+      <p class="text-gray-400 text-center text-sm">
+        &copy; 2025 Hotel Bhagyalaxmi & Restaurant. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+  <!-- footer mobile -->
+   <footer class="bg-gray-900 w-100 text-white pt-10 pb-8  block sm:hidden">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col justify-center items-center">
           <h3 class="text-xl font-['Pacifico'] text-secondary mb-6">
             <a href="index" class="text-2xl font-['Pacifico'] text-secondary"><img src="assets/logo-4.png" alt=""
                 height="90px" width="90px"></a>
           </h3>
-          <p class="text-gray-400 mb-6 text-sm">
+          <p class="text-white mb-6 text-sm">
             Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
             landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance,
             and warm hospitality.
           </p>
           <div class="flex space-x-4">
             <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
               <i class="ri-facebook-fill text-white"></i>
             </a>
             <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
               <i class="ri-instagram-line text-white"></i>
             </a>
             <!-- <a href="#"
@@ -537,35 +621,36 @@
           </div>
         </div>
 
-        <div id="quick-links">
-          <h4 class="text-lg font-semibold mb-2 text-gray-400 text-center">Quick Links</h4>
-          <ul class="space-y-1 mx-auto">
+        <div class="flex justify-start">
+          <div class="mx-10">
+          <h4 class="font-semibold mb-6 text-white" id="links-heading">Quick Links</h4>
+          <ul class="space-y-1">
             <li>
-              <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+              <a href="index.html" class=" hover:text-white transition-colors">Home</a>
             </li>
             <li>
-              <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+              <a href="about.html" class=" hover:text-white transition-colors">About Us</a>
             </li>
             <li>
-              <a href="rooms.html" class="text-gray-400 hover:text-white transition-colors">Rooms & Suites</a>
+              <a href="rooms.html" class=" hover:text-white transition-colors">Rooms & Suites</a>
             </li>
             <li>
-              <a href="dining.html" class="text-gray-400 hover:text-white transition-colors">Dining</a>
+              <a href="dining.html" class=" hover:text-white transition-colors">Dining</a>
             </li>
             <li>
-              <a href="events.html" class="text-gray-400 hover:text-white transition-colors">Events</a>
+              <a href="events.html" class=" hover:text-white transition-colors">Events</a>
             </li>
             <li>
-              <a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a>
+              <a href="gallery.html" class=" hover:text-white transition-colors">Gallery</a>
             </li>
             <li>
-              <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+              <a href="contact.html" class=" hover:text-white transition-colors">Contact</a>
             </li>
           </ul>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold mb-2 text-gray-400">Legal</h4>
+          </div>
+           <div>
+            
+          <h4 class="font-semibold mb-6 text-white" id="links-heading">Legal</h4>
           <ul class="space-y-1">
             <li>
               <a href="terms" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a>
@@ -579,9 +664,10 @@
           </ul>
 
         </div>
-        
-        <div id="contact-us">
-          <h4 class="text-lg font-semibold mb-2 text-gray-400 text-center">Contact Us</h4>
+        </div>
+
+        <div class="">
+          <h4 class="font-semibold mb-6 text-white text-center" id="links-heading">Contact Us</h4>
           <ul class="space-y-3">
             <li class="flex items-start">
               <i class="ri-map-pin-line mr-3 mt-1"></i>
@@ -597,16 +683,18 @@
             </li>
           </ul>
         </div>
+
+       
       </div>
 
       <div class="border-t border-gray-800 pt-8">
-        <p class="text-gray-500 text-center">
+        <p class="text-white text-center">
           &copy; 2025 Hotel Bhagyalaxmi & Restaurant. All rights reserved.
         </p>
       </div>
     </div>
   </footer>
-
+</section>
     <script src="script.js"></script>
 </body>
 

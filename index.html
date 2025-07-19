@@ -145,18 +145,18 @@
 
 <body class="bg-gray-50">
   <!-- Header -->
-  <header class="fixed w-full bg-primary shadow-md z-50" id="header">
+<header class="fixed w-full bg-primary shadow-md z-50">
     <div class="container mx-auto px-4 py-2 flex justify-between items-center">
       <a href="index" class="text-2xl font-['Pacifico'] text-secondary"><img src="assets/logo-4.png" alt=""
           height="90px" width="90px" class="logo"></a>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-6">
-        <a href="index.html" class="text-white hover:text-secondary transition-colors font-medium nav-items">Home</a>
-        <a href="about.html" class="text-white hover:text-secondary transition-colors font-medium nav-items">About</a>
-        <a href="rooms.html" class="text-white hover:text-secondary transition-colors font-medium nav-items">Rooms</a>
-        <a href="dining.html" class="text-white hover:text-secondary transition-colors font-medium nav-items">Dining</a>
-        <a href="events.html" class="text-white hover:text-secondary transition-colors font-medium nav-items">Events</a>
+        <a href="index.html" class="text-white hover:text-secondary transition-colors font-medium">Home</a>
+        <a href="about.html" class="text-white hover:text-secondary transition-colors font-medium">About</a>
+        <a href="rooms.html" class="text-white hover:text-secondary transition-colors font-medium">Rooms</a>
+        <a href="dining.html" class="text-white hover:text-secondary transition-colors font-medium">Dining</a>
+        <a href="events.html" class="text-white hover:text-secondary transition-colors font-medium">Events</a>
         <a href="gallery.html" class="text-white hover:text-secondary transition-colors font-medium">Gallery</a>
         <a href="contact.html" class="text-white hover:text-secondary transition-colors font-medium">Contact</a>
       </nav>
@@ -390,6 +390,13 @@
         </div>
         <h3 class="text-xl font-semibold mb-3">Newspaper & Magazine</h3>
       </div>
+      <!-- Card 10 -->
+      <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-xl hover:scale-105 transition-all duration-300">
+        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 hover:rotate-12 transition-transform duration-300">
+                    <i class="ri-cup-line ri-lg text-white"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Refreshments</h3>
+      </div>
     </div>
   </div>
 </section>
@@ -580,13 +587,13 @@
         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
       </p>
 
-      <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="flex flex-col md:flex-row items-center gap-12 card-animation">
         <div class="md:w-1/2">
           <img src="assets/images/ShubhTithi-0.jpg" alt="Restaurant"
             class="rounded-lg shadow-lg w-full h-auto object-cover transition-transform duration-300 relative hover:translate-x-2" />
         </div>
         <div class="md:w-1/2">
-          <h4 class="font-semibold text-primary mb-2 hide-service-heading">SERVICE</h4>
+          <h4 class="font-semibold text-primary my-2 hide-service-heading">SERVICE</h4>
           <h3 class="text-2xl font-semibold mb-4">Elegant Weddings Service</h3>
           <p class="text-gray-700 mb-6">
             Planning a wedding requires attention to detail, organization, and effective communication. Don't hesitate
@@ -595,7 +602,7 @@
           </p>
 
           <!-- <div class="mb-6">
-            <h4 class="font-semibold text-primary mb-2">Opening Hours:</h4>
+            <h4 class="font-semibold text-primary my-2">Opening Hours:</h4>
             <p class="text-gray-700">Breakfast: 7:00 AM - 10:30 AM</p>
             <p class="text-gray-700">Lunch: 12:30 PM - 3:00 PM</p>
             <p class="text-gray-700">Dinner: 7:00 PM - 11:00 PM</p>
@@ -609,7 +616,7 @@
 
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
-          <h4 class="font-semibold text-primary mb-2 hide-service-heading">SERVICE</h4>
+          <h4 class="font-semibold text-primary my-2 hide-service-heading">SERVICE</h4>
           <h3 class="text-2xl font-semibold mb-4">Private Birthday</h3>
           <p class="text-gray-700 mb-6">
             Birthdays are about celebrating you and creating joyful memories. Feel free to customize your celebration
@@ -617,7 +624,7 @@
           </p>
 
           <!-- <div class="mb-6">
-            <h4 class="font-semibold text-primary mb-2">Opening Hours:</h4>
+            <h4 class="font-semibold text-primary my-2">Opening Hours:</h4>
             <p class="text-gray-700">Breakfast: 7:00 AM - 10:30 AM</p>
             <p class="text-gray-700">Lunch: 12:30 PM - 3:00 PM</p>
             <p class="text-gray-700">Dinner: 7:00 PM - 11:00 PM</p>
@@ -638,7 +645,7 @@
             class="rounded-lg shadow-lg w-full h-auto object-cover transition-transform duration-300 relative  hover:translate-x-2" />
         </div>
         <div class="md:w-1/2">
-          <h4 class="font-semibold text-primary mb-2 hide-service-heading">SERVICE</h4>
+          <h4 class="font-semibold text-primary my-2 hide-service-heading">SERVICE</h4>
           <h3 class="text-2xl font-semibold mb-4">Anniversary</h3>
           <p class="text-gray-700 mb-6">
             An anniversary celebration is a beautiful opportunity to honor your commitment and love for each other.
@@ -646,7 +653,7 @@
           </p>
 
           <!-- <div class="mb-6">
-            <h4 class="font-semibold text-primary mb-2">Opening Hours:</h4>
+            <h4 class="font-semibold text-primary my-2">Opening Hours:</h4>
             <p class="text-gray-700">Breakfast: 7:00 AM - 10:30 AM</p>
             <p class="text-gray-700">Lunch: 12:30 PM - 3:00 PM</p>
             <p class="text-gray-700">Dinner: 7:00 PM - 11:00 PM</p>
@@ -659,7 +666,7 @@
       </div>
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
-          <h4 class="font-semibold text-primary mb-2 hide-service-heading">SERVICE</h4>
+          <h4 class="font-semibold text-primary my-2 hide-service-heading">SERVICE</h4>
           <h3 class="text-2xl font-semibold mb-4">Baby Shower</h3>
           <p class="text-gray-700 mb-6">
             Baby shower is a celebration of the upcoming arrival of a baby and an opportunity for loved ones to come
@@ -668,7 +675,7 @@
           </p>
 
           <!-- <div class="mb-6">
-            <h4 class="font-semibold text-primary mb-2">Opening Hours:</h4>
+            <h4 class="font-semibold text-primary my-2">Opening Hours:</h4>
             <p class="text-gray-700">Breakfast: 7:00 AM - 10:30 AM</p>
             <p class="text-gray-700">Lunch: 12:30 PM - 3:00 PM</p>
             <p class="text-gray-700">Dinner: 7:00 PM - 11:00 PM</p>
@@ -702,7 +709,7 @@
             class="rounded-lg shadow-lg w-full h-auto object-cover transition-transform duration-300 relative hover:-translate-x-2" />
         </div>
         <div class="md:w-1/2">
-          <h4 class="font-semibold text-primary mb-2 hide-service-heading">SERVICE</h4>
+          <h4 class="font-semibold text-primary my-2 hide-service-heading">SERVICE</h4>
           <h3 class="text-2xl font-semibold mb-4">Elegant Weddings Service</h3>
           <p class="text-gray-700 mb-6">
             Planning a wedding requires attention to detail, organization, and effective communication. Don't hesitate
@@ -1101,28 +1108,107 @@
     </div>
   </section>
 
-
+  <!-- footer section -->
+<section id="footer">
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white pt-16 pb-8 hidden sm:block">
-    <div class="container mx-auto px-1">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-2 mb-12">
-        <div >
+<footer class="bg-gray-900 text-white pt-16 pb-8 hidden sm:block">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+      <!-- Logo + Description -->
+      <div>
+        <h3 class="text-xl font-['Pacifico'] text-white mb-6">
+          <a href="index.html">
+            <img src="assets/logo-4.png" alt="Hotel Logo" height="90px" width="90px">
+          </a>
+        </h3>
+        <p class="text-white mb-6 text-sm">
+          Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
+          landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance,
+          and warm hospitality.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
+            <i class="ri-facebook-fill text-white"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
+            <i class="ri-instagram-line text-white"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div id="quick-links">
+        <h4 class="text-lg font-semibold mb-2 text-white text-center">Quick Links</h4>
+        <ul class="space-y-1 text-center">
+          <li><a href="index.html" class="hover:text-yellow-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-400 transition-colors">About Us</a></li>
+          <li><a href="rooms.html" class="hover:text-yellow-400 transition-colors">Rooms & Suites</a></li>
+          <li><a href="dining.html" class="hover:text-yellow-400 transition-colors">Dining</a></li>
+          <li><a href="events.html" class="hover:text-yellow-400 transition-colors">Events</a></li>
+          <li><a href="gallery.html" class="hover:text-yellow-400 transition-colors">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2 text-white">Legal</h4>
+        <ul class="space-y-1">
+          <li><a href="terms" class="hover:text-yellow-400 transition-colors">Terms & Conditions</a></li>
+          <li><a href="privacy-policy" class="hover:text-yellow-400 transition-colors">Privacy Policy</a></li>
+          <li><a href="cookie-policy" class="hover:text-yellow-400 transition-colors">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact-us">
+        <h4 class="text-lg font-semibold mb-2 text-white text-center">Contact Us</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start">
+            <i class="ri-map-pin-line mr-3 mt-1"></i>
+            <span class="text-white">Mount Road, Talheti, Abu Road, Rajasthan- 307510</span>
+          </li>
+          <li class="flex items-center">
+            <i class="ri-phone-line mr-3"></i>
+            <span class="text-white">+91 94144-28362 | +91 98298-07723</span>
+          </li>
+          <li class="flex items-center">
+            <i class="ri-mail-line mr-3"></i>
+            <span class="text-white break-all">bhagyalaxmi.abr@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="border-t border-gray-800 pt-8">
+      <p class="text-gray-400 text-center text-sm">
+        &copy; 2025 Hotel Bhagyalaxmi & Restaurant. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+  <!-- footer mobile -->
+   <footer class="bg-gray-900 w-100 text-white pt-10 pb-8  block sm:hidden">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col justify-center items-center">
           <h3 class="text-xl font-['Pacifico'] text-secondary mb-6">
             <a href="index" class="text-2xl font-['Pacifico'] text-secondary"><img src="assets/logo-4.png" alt=""
                 height="90px" width="90px"></a>
           </h3>
-          <p class="text-gray-400 mb-6 text-sm">
+          <p class="text-white mb-6 text-sm">
             Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
             landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance,
             and warm hospitality.
           </p>
           <div class="flex space-x-4">
             <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
               <i class="ri-facebook-fill text-white"></i>
             </a>
             <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-red-800 transition-colors">
               <i class="ri-instagram-line text-white"></i>
             </a>
             <!-- <a href="#"
@@ -1136,35 +1222,36 @@
           </div>
         </div>
 
-        <div id="quick-links">
-          <h4 class="text-lg font-semibold mb-2 text-gray-400 text-center">Quick Links</h4>
-          <ul class="space-y-1 mx-auto">
+        <div class="flex justify-start">
+          <div class="mx-10">
+          <h4 class="font-semibold mb-6 text-white" id="links-heading">Quick Links</h4>
+          <ul class="space-y-1">
             <li>
-              <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+              <a href="index.html" class=" hover:text-white transition-colors">Home</a>
             </li>
             <li>
-              <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+              <a href="about.html" class=" hover:text-white transition-colors">About Us</a>
             </li>
             <li>
-              <a href="rooms.html" class="text-gray-400 hover:text-white transition-colors">Rooms & Suites</a>
+              <a href="rooms.html" class=" hover:text-white transition-colors">Rooms & Suites</a>
             </li>
             <li>
-              <a href="dining.html" class="text-gray-400 hover:text-white transition-colors">Dining</a>
+              <a href="dining.html" class=" hover:text-white transition-colors">Dining</a>
             </li>
             <li>
-              <a href="events.html" class="text-gray-400 hover:text-white transition-colors">Events</a>
+              <a href="events.html" class=" hover:text-white transition-colors">Events</a>
             </li>
             <li>
-              <a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a>
+              <a href="gallery.html" class=" hover:text-white transition-colors">Gallery</a>
             </li>
             <li>
-              <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+              <a href="contact.html" class=" hover:text-white transition-colors">Contact</a>
             </li>
           </ul>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold mb-2 text-gray-400">Legal</h4>
+          </div>
+           <div>
+            
+          <h4 class="font-semibold mb-6 text-white" id="links-heading">Legal</h4>
           <ul class="space-y-1">
             <li>
               <a href="terms" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a>
@@ -1178,9 +1265,10 @@
           </ul>
 
         </div>
-        
-        <div id="contact-us">
-          <h4 class="text-lg font-semibold mb-2 text-gray-400 text-center">Contact Us</h4>
+        </div>
+
+        <div class="">
+          <h4 class="font-semibold mb-6 text-white text-center" id="links-heading">Contact Us</h4>
           <ul class="space-y-3">
             <li class="flex items-start">
               <i class="ri-map-pin-line mr-3 mt-1"></i>
@@ -1196,119 +1284,18 @@
             </li>
           </ul>
         </div>
+
+       
       </div>
 
       <div class="border-t border-gray-800 pt-8">
-        <p class="text-gray-500 text-center">
+        <p class="text-white text-center">
           &copy; 2025 Hotel Bhagyalaxmi & Restaurant. All rights reserved.
         </p>
       </div>
     </div>
   </footer>
-
-   <footer class="bg-gray-900 text-white pt-16 pb-8  block sm:hidden">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-        <div>
-          <h3 class="text-xl font-['Pacifico'] text-secondary mb-6">
-            <a href="index" class="text-2xl font-['Pacifico'] text-secondary"><img src="assets/logo-4.png" alt=""
-                height="90px" width="90px"></a>
-          </h3>
-          <p class="text-gray-400 mb-6 text-sm">
-            Welcome to Hotel Bhagyalaxmi in Mount Road, Talheti, Abu Road, Rajasthan! Nestled amidst the serene
-            landscapes of Abu Road, Hotel Bhagyalaxmi invites you to experience a perfect blend of comfort, elegance,
-            and warm hospitality.
-          </p>
-          <div class="flex space-x-4">
-            <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
-              <i class="ri-facebook-fill text-white"></i>
-            </a>
-            <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
-              <i class="ri-instagram-line text-white"></i>
-            </a>
-            <!-- <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
-              <i class="ri-twitter-x-line text-white"></i>
-            </a>
-            <a href="#"
-              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
-              <i class="ri-tripadvisor-line text-white"></i>
-            </a> -->
-          </div>
-        </div>
-
-        <div class="ml-10">
-          <h4 class="text-lg font-semibold mb-6 text-gray-400">Quick Links</h4>
-          <ul class="space-y-2">
-            <li>
-              <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
-            </li>
-            <li>
-              <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
-            </li>
-            <li>
-              <a href="rooms.html" class="text-gray-400 hover:text-white transition-colors">Rooms & Suites</a>
-            </li>
-            <li>
-              <a href="dining.html" class="text-gray-400 hover:text-white transition-colors">Dining</a>
-            </li>
-            <li>
-              <a href="events.html" class="text-gray-400 hover:text-white transition-colors">Events</a>
-            </li>
-            <li>
-              <a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a>
-            </li>
-            <li>
-              <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="">
-          <h4 class="text-lg font-semibold mb-6 text-white">Contact Us</h4>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <i class="ri-map-pin-line mr-3 mt-1"></i>
-              <span class="text-gray-400">Mount Road, Talheti, Abu Road, Rajasthan- 307510</span>
-            </li>
-            <li class="flex items-center">
-              <i class="ri-phone-line mr-3"></i>
-              <span class="text-gray-400">+91 94144-28362 | +91 98298-07723</span>
-            </li>
-            <li class="flex items-center">
-              <i class="ri-mail-line mr-3"></i>
-              <span class="text-gray-400 wrap">bhagyalaxmi.abr@gmail.com</span>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold mb-6 text-white">Legal</h4>
-          <ul class="space-y-3">
-            <li>
-              <a href="terms" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="privacy-policy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="cookie-policy" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-
-      <div class="border-t border-gray-800 pt-8">
-        <p class="text-gray-500 text-center">
-          &copy; 2025 Sher-e-Punjab Hotel & Restaurant. All rights reserved.
-        </p>
-      </div>
-    </div>
-  </footer>
-
+</section>
   <!-- swiper js link -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- GLightbox JS -->

@@ -311,3 +311,21 @@ tl.from(header, {
 //   stagger: 0.2,
 //   ease: "power2.out"
 // });
+
+// const tl2 = gsap.timeline({
+//   scrollTrigger: {
+//     scrub: 1,
+//     pin: true,
+//     trigger: ".card-animation",
+//     start: "50% 50%",
+//     endTrigger: ".card-animation",
+//     end: "bottom 50%",
+//   },
+// });
+
+// tl2.from(".card-animation", {
+//   x: -500,
+//   duration: 1,
+//   opacity: 0,
+//       scrub: 1,
+// });

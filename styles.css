@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 
 :where([class^="ri-"])::before {
@@ -18,6 +19,7 @@ body {
   font-size: 1.05rem;
   line-height: 1.7;
   background: #f9fafb;
+  overflow-x: hidden !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,9 +58,16 @@ p, li, .body-text, .feature-card p, .room-card p, .testimonial-card p, .gallery-
   font-size: 1.05rem;
   color: #444;
   font-weight: 400;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   letter-spacing: 0.01em;
 }
+
+/* header nav */
+header a {
+  font-size: 0.875rem;
+}
+
+
 
 .feature-card h3,
 .room-card h3,
@@ -291,8 +300,7 @@ input:checked + .slider:before {
 
 /* Page-specific styles */
 .page-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://readdy.ai/api/search-image?query=Elegant%20hotel%20exterior%20with%20traditional%20Rajasthani%20architecture%2C%20featuring%20ornate%20arches%2C%20domes%2C%20and%20intricate%20stone%20carvings.%20The%20building%20has%20a%20warm%2C%20inviting%20facade%20with%20maroon%20and%20gold%20accents.%20Beautiful%20landscaped%20gardens%20surround%20the%20entrance%20with%20native%20plants%20and%20flowers.&width=1200&height=400&seq=pagehero&orientation=landscape");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -518,6 +526,7 @@ input:checked + .slider:before {
 
 
 /* footer */
+  
 footer ul li a {
   font-size: 0.875rem;
   opacity: 1 !important;
@@ -530,7 +539,9 @@ footer #quick-links {
   align-items: center;
 }
 
-
+footer #links-heading {
+  font-size: 18px;
+}
 
 footer #contact-us {
   position: relative;
