@@ -101,20 +101,41 @@ p, li, .body-text, .feature-card p, .room-card p, .testimonial-card p, .gallery-
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Default animation for large screens */
 .zoom-img {
   animation: zoomPan 8s ease-in-out infinite;
   transform-origin: left center;
 }
 
+/* Keyframes for large screens */
 @keyframes zoomPan {
   0% {
     transform: scale(1) translateX(0);
   }
   50% {
-    transform: translateX(-2%); /* if add zoom effect add scale  scale(1.1)  */
+    transform: scale(1.1) translateX(-2%);
   }
   100% {
     transform: scale(1) translateX(0);
+  }
+}
+
+/* Small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .zoom-img {
+    animation: zoomPanMobile 8s ease-in-out infinite;
+  }
+
+  @keyframes zoomPanMobile {
+    0% {
+      transform: scale(1) translateX(0);
+    }
+    50% {
+      transform: scale(1.05) translateX(-1%);
+    }
+    100% {
+      transform: scale(1) translateX(0);
+    }
   }
 }
 
