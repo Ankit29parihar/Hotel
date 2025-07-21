@@ -295,55 +295,6 @@ const lightbox = GLightbox({
 // nav gsap animation
 
 
-function heroNavAnimation() {
-  var tl = gsap.timeline();
-
-  // Animate Header
-  var header = document.querySelector("#header");
-  tl.from(header, {
-    y: -100,
-    opacity: 0,
-    duration: 1.1,
-    ease: "power2.out",
-  });
-
-  // Get only active slide content
-  var activeSlide = document.querySelector(".swiper-slide-active");
-
-  if (activeSlide) {
-    var heroTitle = activeSlide.querySelector(".hero-title");
-    var heroDesc = activeSlide.querySelector(".hero-desc");
-    var heroButtons = activeSlide.querySelectorAll(".hero-buttons");
-
-    tl.from(heroTitle, {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out",
-    });
-
-    tl.from(heroDesc, {
-      y: 20,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power2.out",
-    }, "-=0.6");
-
-    tl.from(heroButtons, {
-      scale: 0.95,
-      opacity: 0,
-      stagger: 0.15,
-      duration: 0.6,
-      stagger: 0.6,
-      ease: "back.out(1.7)",
-    }, "-=0.5");
-  }
-
-
-  
-}
-// nav and carousel animation call
-heroNavAnimation();
 
 gsap.registerPlugin(ScrollTrigger);
 
